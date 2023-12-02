@@ -7,7 +7,7 @@ function insertarContacto() {
 
     // Validar los campos si es necesario
 
-    const URL = "https://git.heroku.com/frontend-contactos.git";
+    const URL = "https://frontend-contactos-47896c7caf37.herokuapp.com";
     // const URL = "https://shm-backend-105ae4e301e9.herokuapp.com/contactos";
 
     var request = new XMLHttpRequest();
