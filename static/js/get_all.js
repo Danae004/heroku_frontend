@@ -1,5 +1,5 @@
 function getAll() {
-    const URL = "http://127.0.0.1:8000/contactos";
+    const URL = "https://git.heroku.com/frontend-contactos.git";
     var request = new XMLHttpRequest();
     request.open('GET', URL);
     request.send();
