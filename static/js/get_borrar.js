@@ -1,6 +1,6 @@
 function borrarContacto() {
     const email = document.getElementById('email').value;
-    const URL = "https://git.heroku.com/frontend-contactos.git" + email;
+    const URL = "https://frontend-contactos-47896c7caf37.herokuapp.com" + email;
 
     var request = new XMLHttpRequest();
     request.open('DELETE', URL, true);
