@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contactos</title>
+    <script type="text/javascript" src="../static/js/get_all.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4682b4; /* Azul bajito */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        nav {
+            background-color: #4682b4; /* Azul steel */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #4682b4; /* Mismo color que el fondo de la barra de navegación */
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #4682b4; /* Azul steel */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <center><h1>Contactos</h1></center>
+
+    <nav>
+        <a href="buscar">Buscar</a>
+        <a href="/insertar">Insertar</a>
+        <a href="/ver">Ver</a>
+        <a href="/borrar">Borrar</a>
+        <a href="/editar">Editar</a>
+    </nav>
+
+    <table border="1" id="table_contactos">
+        <thead id="thead_contactos">
+            <th>Email</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+        </thead>
+        <tbody id="tbody_contactos">
+        </tbody>
+    </table>
+
+    <script>
+        document.body.onload = getAll();
+    </script>
+</body>
+</html>
+

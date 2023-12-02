@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Lista de Contactos</title>
+    <script type="text/javascript" src="../static/js/get_ver.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4682b4; /* Azul bajito */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: white;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #4682b4; /* Azul steel */
+            color: white;
+        }
+
+        button {
+            color: white;
+            background-color: #4682b4; /* Azul steel */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        #detalle_contacto {
+            display: none;
+        }
+    </style>
+</head>
+<body onload="verContactos()"> 
+    <h1>Lista de contactos</h1>
+
+    <button value="Regresar al Índice" onclick="regresarAlIndice()">Regresar al Índice</button>
+    
+    <table border="1" id="table_contactos">
+        <thead id="thead_contactos">
+            <th>Email</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody id="tbody_contactos">
+        </tbody>
+    </table>
+
+    <div id="detalle_contacto">
+        <h2>Detalle de Contacto</h2>
+        <p id="detalle_email"></p>
+        <p id="detalle_nombre"></p>
+        <p id="detalle_telefono"></p>
+        <button onclick="regresarALista()">Regresar a Lista</button>
+    </div>
+</body>
+</html>
+

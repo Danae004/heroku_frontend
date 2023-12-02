@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Buscar Contactos</title>
+    <script type="text/javascript" src="../static/js/get_one.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4682b4; /* Azul bajito */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        label {
+            color: white;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        button {
+            color: white;
+            background-color: #4682b4; /* Azul steel */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #4682b4; /* Azul steel */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Buscar contacto</h1>
+    <label for="email">Email</label>
+    <input type="email" id="email">
+    <button value="Buscar" onclick="getOne(document.getElementById('email').value)">Buscar</button>
+    <button value="Regresar al Índice" onclick="regresar()">Regresar</button>
+
+    <table border="1" id="table_contactos">
+        <thead id="thead_contactos">
+            <th>Email</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+        </thead>
+        <tbody id="tbody_contactos">
+        </tbody>
+    </table>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Insertar Contacto</title>
+    <script type="text/javascript" src="../static/js/insertar.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4682b4; /* Azul bajito */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        label {
+            color: white;
+            display: block;
+            margin: 10px;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        button {
+            color: white;
+            background-color: #4682b4; /* Azul steel */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insertar contacto</h1>
+    
+    <p>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+    </p>
+
+    <p>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+    </p>
+
+    <p>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono">
+    </p>
+
+    <button value="Insertar" onclick="insertarContacto()">Insertar</button>
+    <button value="Cancelar" onclick="cancelarInsercion()">Cancelar</button>
+    <button value="Regresar al Índice" onclick="regresar()">Regresar</button>
+</body>
+</html>
