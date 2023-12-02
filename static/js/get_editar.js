@@ -5,7 +5,7 @@ function editarContacto() {
 
     // Validar campos si es necesario
 
-    const URL = "https://git.heroku.com/frontend-contactos.git" + correo_actual;
+    const URL = "https://frontend-contactos-47896c7caf37.herokuapp.com" + correo_actual;
 
     var request = new XMLHttpRequest();
     request.open('PUT', URL, true);
